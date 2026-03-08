@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import { startGlobalAmbient } from "@/hooks/useAudio";
 import { ThemeProvider } from "@/contexts/ThemeContext";
-import WelcomePage from "./pages/WelcomePage";
+import Index from "./pages/Index";
 import MenuPage from "./pages/MenuPage";
 import PetunjukPage from "./pages/PetunjukPage";
 import KubusPage from "./pages/KubusPage";
@@ -79,7 +79,7 @@ const AppInner = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<WelcomePage />} />
+      <Route path="/" element={<Index />} />
       <Route path="/menu" element={<MenuPage />} />
       <Route path="/petunjuk" element={<PetunjukPage />} />
       {/* Materi subtopic routes - used by Quiz Gamez */}
